@@ -1,48 +1,51 @@
-# **Proyecto Indice de Calidad del Aire 🌍🔍**
+# **Air Quality Index Project 🌍🔍**
 ---
-## *Descripción del Proyecto*
 
-Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno.
+## *Project description*
 
-## *Características Principales*
+This project aims to analyse and visualise data related to air quality, focusing on the Air Quality Index (AQI) and assessing the level of risk associated with pollutant values. In addition, meteorological data is integrated for a more complete understanding of the environment.
 
-- Análisis de datos de calidad del aire.
-- Cálculo y representación del AQI.
-- Evaluación del nivel de riesgo asociado con los valores contaminantes.
-- Integración de datos meteorológicos.
-- Visualización de datos a través de gráficos y tablas.
-- Creación y entrenamiento de un modelo de machine learning para predecir el AQI.
+## *Main features*
 
-## *Tecnologías Utilizadas*
+- Analysis of air quality data.
+- Calculation and representation of the AQI.
+- Assessment of the level of risk associated with pollutant values.
+- Integration of meteorological data.
+- Data visualisation through graphs and tables.
+- Creation and training of a machine learning model to predict the AQI.
+
+## *Technologies used*
 
 - Python 🐍
 - Pandas 🐼
 - Matplotlib/Seaborn 📊
-- Scikit-learn (para el modelo de machine learning).
-- Otros módulos relevantes para análisis de datos y visualización.
-- API de datos meteorológicos (por ejemplo, OpenWeatherMap). 🌦️
+- Scikit-learn (for the machine learning model).
+- Other relevant modules for data analysis and visualisation.
+- Weather data API (e.g. OpenWeatherMap). 🌦️
 
-## *Estructura del Proyecto*
+## *Project structure*
 
-- `data/`: Carpeta que contiene los conjuntos de datos utilizados.
-- `scripts/`: Archivos de Python para análisis, visualización y modelado de datos.
-- `results/`: Carpeta que puede contener resultados intermedios o finales.
-- `README.md`: Documentación del proyecto (este archivo). 📚
+- `data/`: Folder containing the used, processed and temporary datasets.
+- `models/`: Folder containing the machine learning models.
+- `src/`: Folder containing the source code of the project.
+- `README.md`: Project documentation (this file). 📚
 
-## *Instrucciones de Ejecución*
+## *Execution Instructions*
 
-1. Clona este repositorio:
+1. Clone this repository:
 
    ```bash
    git clone [https://github.com/Yakondra/Final-project-air-quality.git]
    o
    git clone [https://github.com/Pilizmt/Final-project-air-quality.git]
 
-2. Instala las dependencias:
+2. Install the dependencies:
 
     ```bash
     pip install -r requirements.txt
 
-## *Cómo Contribuir*
+## *How to Contribute*
 
-¡Las contribuciones son bienvenidas! Si encuentras problemas, tienes ideas para mejoras o deseas agregar nuevas características, siéntete libre de enviar un pull request. 🤝🚀
+Contributions are welcome! If you encounter problems, have ideas for improvements or want to add new features, feel free to send a pull request. 🤝🚀
+
+
