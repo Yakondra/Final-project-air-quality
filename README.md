@@ -1,4 +1,4 @@
-# **Proyecto Air Quality Index (AQI)**
+# **Proyecto Indice de Calidad del Aire 🌍🔍**
 ---
 ## *Descripción del Proyecto*
 
@@ -34,8 +34,15 @@ Este proyecto tiene como objetivo analizar y visualizar datos relacionados con l
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/TuUsuario/TuProyecto.git
+   git clone [https://github.com/Yakondra/Final-project-air-quality.git]
+   o
+   git clone [https://github.com/Pilizmt/Final-project-air-quality.git]
 
-## *Contribuciones*
+2. Instala las dependencias:
+
+    ```bash
+    pip install -r requirements.txt
+
+## *Cómo Contribuir*
 
 ¡Las contribuciones son bienvenidas! Si encuentras problemas, tienes ideas para mejoras o deseas agregar nuevas características, siéntete libre de enviar un pull request. 🤝🚀
