@@ -5,8 +5,11 @@
 Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno.
 Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madrid. Estos datos proporcionan información detallada sobre la calidad del aire en diferentes municipios de la región.
 
+Los datos han sido recopilados y compartidos por la Comunidad de Madrid como parte de su iniciativa de monitoreo de la calidad del aire. Puedes encontrar más información y acceder a los conjuntos de datos originales en el sitio web oficial de la Comunidad de Madrid (https://datos.comunidad.madrid/catalogo/organization/comunidad-de-madrid).
 
-## Descripción de los Datos
+Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que han permitido llevar a cabo este análisis sobre la calidad del aire.
+
+## *Descripción de los Datos*
 
 #### **ESTRUCTURA DE LOS ARCHIVOS**
 
@@ -50,6 +53,22 @@ Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madr
 | 88     | Radiación solar | W/m² | 89 | vatios por metro cuadrado |
 | 89     | Precipitación | l/m² | 89 | litros por metro cuadrado |
 
+#### **MUNICIPIOS**
+
+| ID    | Municipio            | ID    | Municipio                | ID    | Municipio                | ID    | Municipio                |
+|-------|----------------------|-------|--------------------------|-------|--------------------------|-------|--------------------------|
+| 5     | ALCALÁ DE HENARES    | 49    | COSLADA                  | 74    | LEGANÉS                  | 102   | ORUSCO DE TAJUÑA         |
+| 6     | ALCOBENDAS           | 58    | FUENLABRADA              | 80    | MAJADAHONDA              | 120   | PUERTO DE COTOS          |
+| 7     | ALCORCÓN             | 65    | GETAFE                   | 92    | MÓSTOLES                 | 123   | RIVAS-VACIAMADRID        |
+| 9     | ALGETE               | 67    | GUADALIX DE LA SIERRA    | 74    | LEGANÉS                  | 133   | SAN MARTÍN DE VALDEIGLESIAS |
+| 13    | ARANJUEZ             |-------|--------------------------| 80    | MAJADAHONDA              | 148   | TORREJÓN DE ARDOZ        |
+| 14    | ARGANDA DEL REY      |       |                          | 92    | MÓSTOLES                 | 161   | VALDEMORO                |
+| 16    | EL ATAZAR            |       |                          | 102   | ORUSCO DE TAJUÑA         | 171   | VILLA DEL PRADO          |
+| 45    | COLMENAR VIEJO       |       |                          | 120   | PUERTO DE COTOS          | 180   | VILLAREJO DE SALVANÉS    |
+| 47    | COLLADO VILLALBA     |       |                          | 123   | RIVAS-VACIAMADRID        |       |                          |
+
+
+
 ## *Características Principales*
 
 - Análisis de datos de calidad del aire.
@@ -80,9 +99,9 @@ Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madr
 1. Clona este repositorio:
 
    ```bash
-   git clone [https://github.com/Yakondra/Final-project-air-quality.git]
+   git clone (https://github.com/Yakondra/Final-project-air-quality.git)
    o
-   git clone [https://github.com/Pilizmt/Final-project-air-quality.git]
+   git clone (https://github.com/Pilizmt/Final-project-air-quality.git)
 
 2. Instala las dependencias:
 
