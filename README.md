@@ -1,5 +1,5 @@
 # **Proyecto Air Quality Index (AQI)**
-
+---
 ## *Descripción del Proyecto*
 
 Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno.
