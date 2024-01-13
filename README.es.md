@@ -6,6 +6,19 @@ Este proyecto tiene como objetivo analizar y visualizar datos relacionados con l
 
 El objetivo principal de este proyecto es desarrollar un modelo que pueda predecir el nivel de riesgo asociado con los valores de contaminantes. Esta predicción será una herramienta valiosa para la toma de decisiones en temas relacionados con la calidad del aire y la salud pública.
 
+El Índice de Calidad del Aire es una medida que proporciona información sobre la calidad del aire en una determinada área y cómo afecta la salud humana.
+Este índice se calcula tomando en cuenta varios contaminantes atmosféricos comunes, como partículas en suspensión (PM10 y PM2.5), dióxido de azufre (SO2), dióxido de nitrógeno (NO2), ozono (O3), y monóxido de carbono (CO).
+El AQI clasifica la calidad del aire en diferentes categorías, cada una asociada con un nivel de salud y recomendaciones específicas. Las categorías comunes incluyen:
+
+- Buena (0-50): La calidad del aire se considera satisfactoria, y la contaminación del aire presenta poco o ningún riesgo.
+- Moderada (51-100): La calidad del aire es aceptable; sin embargo, algunas partículas pueden ser un problema para personas extremadamente sensibles a la contaminación del aire.
+- No saludable para grupos sensibles (101-150): Miembros de grupos sensibles, como personas con enfermedades respiratorias o cardíacas, pueden experimentar efectos en la salud. El público en general no se ve afectado.
+- No saludable (151-200): Todos pueden comenzar a experimentar efectos en la salud, y los miembros de grupos sensibles pueden experimentar efectos más graves.
+- Muy no saludable (201-300): Advertencias de salud de emergencia; la población entera es más propensa a verse afectada.
+- Peligroso (301 o más): Alerta de salud: todos pueden experimentar efectos de salud más graves.
+
+El AQI proporciona una herramienta fácil de entender para que el público comprenda la calidad del aire y tome medidas adecuadas para proteger su salud cuando sea necesario.
+
 Los datos han sido recopilados y compartidos por la Comunidad de Madrid como parte de su iniciativa de monitoreo de la calidad del aire. Puedes encontrar más información y acceder a los conjuntos de datos originales en el sitio web oficial de la Comunidad de Madrid (https://datos.comunidad.madrid/catalogo/organization/comunidad-de-madrid).
 
 Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que han permitido llevar a cabo este análisis sobre la calidad del aire.
@@ -27,6 +40,7 @@ Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que h
 
 > Conjunto de datos horarios medidos de forma automática en las estaciones de la Red de Calidad del Aire de la Comunidad de Madrid por anualidades.
 > Todos los datos de concentración están expresados en microgramos por metro cúbico (μg/m³).
+
 
 | CÓDIGO | MAGNITUD                         | DESCRIPCIÓN MAGNITUD | 
 |--------|---------------------------------|----------------------| 
