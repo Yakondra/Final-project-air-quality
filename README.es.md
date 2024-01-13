@@ -24,6 +24,9 @@ Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que h
 
 #### **CONTAMINANTES**
 
+> Conjunto de datos horarios medidos de forma automática en las estaciones de la Red de Calidad del Aire de la Comunidad de Madrid por anualidades.
+> Todos los datos de concentración están expresados en microgramos por metro cúbico (μg/m³).
+
 | CÓDIGO | MAGNITUD                         | DESCRIPCIÓN MAGNITUD | 
 |--------|---------------------------------|----------------------| 
 | 1      | Dióxido de azufre               | Fluorescencia ultravioleta | 
@@ -41,10 +44,10 @@ Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que h
 | 44     | Hidrocarburos no metánicos      | Ionización llama        | 
 | 431    | MetaParaXileno                  | Cromatografía de gases | 
 
-> Todos los datos de concentración están expresados en microgramos por metro cúbico (μg/m³).
-
-
 #### **CLIMATOLÓGICOS** 
+
+> Datos meteorológicos horarios desde el año 2020 recogidos por las estaciones de medición de la Red de Calidad del Aire de la Comunidad de Madrid.
+> Los datos meteorológicos oficiales son los proporcionados por la Agencia Estatal de Meteorología (AEMET).
 
 | CÓDIGO | MAGNITUD               | DESCRIPCIÓN MAGNITUD | 
 |--------|------------------------|----------------------| 
