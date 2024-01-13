@@ -24,34 +24,38 @@ Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que h
 
 #### **CONTAMINANTES**
 
-| CÓDIGO | MAGNITUD                         | DESCRIPCIÓN MAGNITUD | CÓDIGO TÉCNICA DE MEDIDA | DESCRIPCIÓN TÉCNICA DE MEDIDA | UNIDAD | DESCRIPCIÓN UNIDAD                |
-|--------|---------------------------------|----------------------|---------------------------|-----------------------------|--------|----------------------------------|
-| 1      | Dióxido de azufre               | Fluorescencia ultravioleta | 38                        | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 6      | Monóxido de carbono             | Espectrometría infrarroja no dispersiva | 48            | miligramos por metro cúbico | mg/m³  | miligramos por metro cúbico       |
-| 7      | Monóxido de nitrógeno           | Quimioluminiscencia    | 8                         | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 8      | Dióxido de nitrógeno            | Quimioluminiscencia    | 8                         | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 9      | Partículas en suspensión < PM2,5| Absorción beta        | 49                        | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 10     | Partículas en suspensión < PM10 | Absorción beta        | 49                        | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 12     | Óxidos de nitrógeno             | Quimioluminiscencia    | 8                         | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 14     | Ozono                           | Absorción ultravioleta | 6                        | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 20     | Tolueno                         | Cromatografía de gases | 59                       | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 22     | Black Carbon                    | Absorción de luz        | 7                        | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 30     | Benceno                         | Cromatografía de gases | 59                       | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
-| 42     | Hidrocarburos totales           | Ionización llama        | 2                        | miligramos por metro cúbico | mg/m³  | miligramos por metro cúbico       |
-| 44     | Hidrocarburos no metánicos      | Ionización llama        | 2                        | miligramos por metro cúbico | mg/m³  | miligramos por metro cúbico       |
-| 431    | MetaParaXileno                  | Cromatografía de gases | 59                       | microgramos por metro cúbico | μg/m³  | microgramos por metro cúbico     |
+| CÓDIGO | MAGNITUD                         | DESCRIPCIÓN MAGNITUD | 
+|--------|---------------------------------|----------------------| 
+| 1      | Dióxido de azufre               | Fluorescencia ultravioleta | 
+| 6      | Monóxido de carbono             | Espectrometría infrarroja no dispersiva | 
+| 7      | Monóxido de nitrógeno           | Quimioluminiscencia    | 
+| 8      | Dióxido de nitrógeno            | Quimioluminiscencia    | 
+| 9      | Partículas en suspensión < PM2,5| Absorción beta        | 
+| 10     | Partículas en suspensión < PM10 | Absorción beta        | 
+| 12     | Óxidos de nitrógeno             | Quimioluminiscencia    | 
+| 14     | Ozono                           | Absorción ultravioleta | 
+| 20     | Tolueno                         | Cromatografía de gases | 
+| 22     | Black Carbon                    | Absorción de luz        | 
+| 30     | Benceno                         | Cromatografía de gases | 
+| 42     | Hidrocarburos totales           | Ionización llama        | 
+| 44     | Hidrocarburos no metánicos      | Ionización llama        | 
+| 431    | MetaParaXileno                  | Cromatografía de gases | 
+
+> Todos los datos de concentración están expresados en microgramos por metro cúbico (μg/m³).
+
 
 #### **CLIMATOLÓGICOS** 
 
-| CÓDIGO | MAGNITUD | DESCRIPCIÓN MAGNITUD | CÓDIGO DE TÉCNICA DE MEDIDA | UNIDAD | DESCRIPCIÓN UNIDAD |
-|--------|----------|----------------------|-----------------------------|--------|---------------------|
-| 81     | Velocidad del viento | m/s | 89 | metros por segundo |
-| 82     | Dirección del viento | Grd | 89 | grados |
-| 83     | Temperatura | ºC | 89 | grados centígrados |
-| 86     | Humedad relativa | % | 89 | porcentaje |
-| 87     | Presión atmosférica | mbar | 89 | milibar |
-| 88     | Radiación solar | W/m² | 89 | vatios por metro cuadrado |
-| 89     | Precipitación | l/m² | 89 | litros por metro cuadrado |
+| CÓDIGO | MAGNITUD               | DESCRIPCIÓN MAGNITUD | 
+|--------|------------------------|----------------------| 
+| 81     | Velocidad del viento   | m/s                  | 
+| 82     | Dirección del viento   | Grd                  | 
+| 83     | Temperatura            | ºC                   | 
+| 86     | Humedad relativa       | %                    | 
+| 87     | Presión atmosférica    | mbar                 | 
+| 88     | Radiación solar        | W/m²                 | 
+| 89     | Precipitación          | l/m²                 | 
+
 
 #### **MUNICIPIOS**
 
