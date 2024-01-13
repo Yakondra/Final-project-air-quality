@@ -2,8 +2,9 @@
 ---
 ## *Descripción del Proyecto*
 
-Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno.
-Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madrid. Estos datos proporcionan información detallada sobre la calidad del aire en diferentes municipios de la región.
+Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno. Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madrid, proporcionando información detallada sobre la calidad del aire en diferentes municipios de la región.
+
+El objetivo principal de este proyecto es desarrollar un modelo que pueda predecir el nivel de riesgo asociado con los valores de contaminantes. Esta predicción será una herramienta valiosa para la toma de decisiones en temas relacionados con la calidad del aire y la salud pública.
 
 Los datos han sido recopilados y compartidos por la Comunidad de Madrid como parte de su iniciativa de monitoreo de la calidad del aire. Puedes encontrar más información y acceder a los conjuntos de datos originales en el sitio web oficial de la Comunidad de Madrid (https://datos.comunidad.madrid/catalogo/organization/comunidad-de-madrid).
 
