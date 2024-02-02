@@ -14,6 +14,30 @@ st.title('Nivel de peligrosidad de contaminantes atmosféricos')
 # Introductory message
 st.write('Introduzca los siguientes valores para iniciar.')
 
+#Users data
+
+media_val = st.slider('Introduzca el valor recogido:',
+                    min_value = 0.04,
+                    max_value = 800.00,
+                    step = 0.01
+                    )
+
+municipio_val = st.selectbox('Seleccione el municipio:',
+                       ('MADRID', 'ATAZAR (EL)')
+                       )
+
+bmi_val = st.slider('Enter your BMI:',
+                    min_value = 15.80,
+                    max_value = 51.20,
+                    step = 0.01
+                    )
+
+children_val = st.number_input('Enter the number of children (if you have them):',
+                               min_value = 0,
+                               max_value = 5,
+                               step = 1
+                               )
+
 
 
 # input_data = {
