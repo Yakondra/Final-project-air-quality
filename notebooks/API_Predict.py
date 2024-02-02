@@ -1,12 +1,8 @@
 import streamlit as st 
-from pickle import dump
+from pickle import load
 import pickle
-import os
-import joblib
 
-model_path = os.path.join('models', 'RandomForestMadrid_23.pk')
-model = joblib.load(model_path)
-
+dicc_area = load(open('../data/interim/diccionarios/dicc_area.pk', 'rb'))
 
 # input_data = {
 #     'LATITUD': valor_latitud,
