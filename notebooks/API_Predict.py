@@ -1,63 +1,12 @@
 import streamlit as st 
 from pickle import load
 
-# Correspondence
-dicc_municipality = {
-        'ALCOBENDAS': 0,
-        'ATAZAR (EL)': 1,
-        'COLLADO VILLALBA': 2,
-        'FUENLABRADA': 3,
-        'MADRID': 4,
-        'ALCALÁ DE HENARES': 5,
-        'COLMENAR VIEJO': 6,
-        'MÓSTOLES': 7,
-        'ORUSCO DE TAJUÑA': 8,
-        'VILLA DEL PRADO': 9,
-        'VALDEMORO': 10,
-        'RIVAS-VACIAMADRID': 11,
-        'TORREJÓN DE ARDOZ': 12,
-        'VILLAREJO DE SALVANÉS': 13,
-        'ARGANDA DEL REY': 14,
-        'COSLADA': 15,
-        'GETAFE': 16,
-        'LEGANÉS': 17,
-        'MAJADAHONDA': 18,
-        'ALCORCÓN': 19,
-        'ALGETE': 20,
-        'ARANJUEZ': 21,
-        'RASCAFRÍA': 22,
-        'SAN MARTÍN DE VALDEIGLESIAS': 23,
-        'GUADALIX DE LA SIERRA': 24
-}
 
-dicc_magnitudes = {
-        'C6H6': 0,
-        'CO': 1,
-        'NO2': 2,
-        'NOX': 3,
-        'O3': 4,
-        'PM10': 5,
-        'PM2.5': 6,
-        'SO2': 7,
-    }
-
-dicc_area = {
-        'URBANA': 0, 
-        'RURAL': 1,
-        'SUBURBANA': 2
-}
-
-dicc_station = {
-        'TRAFICO': 0,
-        'FONDO': 1,
-        'INDUSTRIAL': 2
-}
-
-dicc_danger = {
-        'Baja': 0,
-        'Normal': 1,
-        'Alta': 2
-}
+dicc_municipality = load(open('../data/interim/diccionarios/N_MUNICIPIO_dicc.pk', 'rb'))
+dicc_magnitudes = load(open('../data/interim/diccionarios/MAGNITUD_dicc.pk', 'rb'))
+dicc_area = load(open('../data/interim/diccionarios/TIPO_AREA_dicc.pk', 'rb'))
+dicc_station = load(open('../data/interim/diccionarios/TIPO_ESTACION_dicc.pk', 'rb'))
+dicc_peligrosidad = load(open('../data/interim/diccionarios/PELIGROSIDAD_dicc.pk', 'rb'))
 
 
 st.title('Nivel de peligrosidad de contaminantes atmosféricos')
@@ -72,32 +21,52 @@ mean_value = st.slider('Introduzca el valor recogido:',
                     step = 0.01
                     )
 
-sel_municipality = st.selectbox('Seleccione el municipio:','Seleccione el municipio:', dicc_municipality)
+sel_municip = st.selectbox('Seleccione el municipio:', options= list(dicc_municipality.keys()))
 
-sel_area = st.selectbox('Seleccione el tipo de área:', dicc_area)
+sel_magnitud = st.selectbox('Seleccione el contaminante:', options= list(dicc_magnitudes.keys()))
 
-sel_station = st.selectbox('Seleccione el tipo de estación:', dicc_station)
+sel_area = st.selectbox('Seleccione el tipo de área:', options= list(dicc_area.keys()))
 
-sel_magnitud = st.selectbox('Seleccione la magnitud:', dicc_magnitudes)
+sel_station = st.selectbox('Seleccione el tipo de estación:', options= list(dicc_station.keys()))
+
 
 # Load factorized values
 
-fact_values = load(open('../data/interim/factorize_values/facto_madrid.pk', 'rb'))
+fact_values = load(open('../data/interim/factorize_values/sin_LL.pk', 'rb'))
 
 # Button to predict
 
 row = [mean_value,
-    fact_values["N_MUNICIPIO_N"][sel_municipality.lower()],
-    fact_values["MAGNITUD_N"][sel_municipality.lower()],
-    fact_values["TIPO_AREA_N"][sel_municipality.lower()],
-    fact_values["TIPO_ESTACION_N"][sel_municipality.lower()]
+    fact_values["N_MUNICIPIO_N"][sel_municip.lower()],
+    fact_values["MAGNITUD_N"][sel_magnitud.lower()],
+    fact_values["TIPO_AREA_N"][sel_area.lower()],
+    fact_values["TIPO_ESTACION_N"][sel_station.lower()]
     ]
 
 if st.button('Predict:'):
-    normal_scaler = load(open('../models/normal_scaler.pk', 'rb'))
-    scaler_row = normal_scaler.transform([row])
 
-    model = load(open('../models/linear_regression.pk', 'rb'))
+    model = load(open('../models/RandomForestMadrid_23.pk', 'rb'))
     y_pred = model.predict([row])
 
-    st.text('The price of the insurance would be:' +str(round(y_pred[0, 0], 2)))
+    st.text('Peligrosidad:' +str(round(y_pred[0, 0], 2)))
+
+
+
+
+# # Opción seleccionada usando las claves del diccionario
+# opcion_seleccionada = st.selectbox(
+#     'Selecciona una opción:',
+#     options=list(mi_diccionario.keys())
+# )
+
+# st.write(f'Has seleccionado: {opcion_seleccionada}')
+
+
+
+# # Opción seleccionada usando los valores del diccionario
+# opcion_seleccionada = st.selectbox(
+#     'Selecciona una opción:',
+#     options=list(mi_diccionario.values())
+# )
+
+# st.write(f'Has seleccionado: {opcion_seleccionada}')
