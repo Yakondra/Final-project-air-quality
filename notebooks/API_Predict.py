@@ -62,22 +62,3 @@ if st.button('Predict:'):
 
     st.text('Peligrosidad:' + result)
 
-
-
-# # Opción seleccionada usando las claves del diccionario
-# opcion_seleccionada = st.selectbox(
-#     'Selecciona una opción:',
-#     options=list(mi_diccionario.keys())
-# )
-
-# st.write(f'Has seleccionado: {opcion_seleccionada}')
-
-
-
-# # Opción seleccionada usando los valores del diccionario
-# opcion_seleccionada = st.selectbox(
-#     'Selecciona una opción:',
-#     options=list(mi_diccionario.values())
-# )
-
-# st.write(f'Has seleccionado: {opcion_seleccionada}')
