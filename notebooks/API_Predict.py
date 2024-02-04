@@ -1,11 +1,11 @@
 import streamlit as st 
 from pickle import load
 
-dicc_municipality = load(open('../data/interim/diccionarios/N_MUNICIPIO_dicc.pk', 'rb'))
-dicc_magnitudes = load(open('../data/interim/diccionarios/MAGNITUD_dicc.pk', 'rb'))
-dicc_area = load(open('../data/interim/diccionarios/TIPO_AREA_dicc.pk', 'rb'))
-dicc_station = load(open('../data/interim/diccionarios/TIPO_ESTACION_dicc.pk', 'rb'))
-dicc_peligrosidad = load(open('../data/interim/diccionarios/PELIGROSIDAD_dicc.pk', 'rb'))
+dicc_municipality = load(open('../data/interim/diccionarios/N_MUNICIPIO_correspondencia.pkl', 'rb'))
+dicc_magnitudes = load(open('../data/interim/diccionarios/MAGNITUD_correspondencia.pkl', 'rb'))
+dicc_area = load(open('../data/interim/diccionarios/TIPO_AREA_correspondencia.pkl', 'rb'))
+dicc_station = load(open('../data/interim/diccionarios/TIPO_ESTACION_correspondencia.pkl', 'rb'))
+dicc_peligrosidad = load(open('../data/interim/diccionarios/PELIGROSIDAD_correspondencia.pkl', 'rb'))
 
 
 st.title('Nivel de peligrosidad de contaminantes atmosféricos')
