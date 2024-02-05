@@ -5,7 +5,7 @@ dicc_municipality = load(open('../data/interim/diccionarios/N_MUNICIPIO_correspo
 dicc_magnitudes = load(open('../data/interim/diccionarios/MAGNITUD_correspondencia.pkl', 'rb'))
 dicc_area = load(open('../data/interim/diccionarios/TIPO_AREA_correspondencia.pkl', 'rb'))
 dicc_station = load(open('../data/interim/diccionarios/TIPO_ESTACION_correspondencia.pkl', 'rb'))
-dicc_peligrosidad = load(open('../data/interim/diccionarios/PELIGROSIDAD_correspondencia.pkl', 'rb'))
+# dicc_peligrosidad = load(open('../data/interim/diccionarios/PELIGROSIDAD_correspondencia.pkl', 'rb'))
 
 
 st.title('Nivel de peligrosidad de contaminantes atmosféricos')
@@ -40,7 +40,6 @@ row = [
     dicc_station[sel_station],
     mean_value
 ]   
-
 
 # Button to predict
 
