@@ -34,11 +34,11 @@ mean_value = st.number_input('Introduzca el valor recogido (µg/m3):',
 #fact_values = load(open('../data/interim/factorize_values/madrid_sin_LL.pk', 'rb'))
 
 row = [
+    mean_value,
     dicc_municipality[sel_municip],
     dicc_magnitudes[sel_magnitud],
     dicc_area[sel_area],
-    dicc_station[sel_station],
-    mean_value
+    dicc_station[sel_station]
 ]   
 
 # Button to predict
