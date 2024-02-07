@@ -70,7 +70,7 @@ Fuente:
 - Matplotlib/Seaborn 📊
 - Pickle 🥒
 - Scikit-learn 🤖 (para el modelo de machine learning).
-- Streamlit 🌐 (para desarrollar la aplicación web interactiva).
+- Streamlit 🌐 (para desarrollar la aplicación web interactiva).  
 
 ## *Estructura del Proyecto*
 

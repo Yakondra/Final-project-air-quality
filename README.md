@@ -58,7 +58,7 @@ Source:
 ## *File structure*
 
 - Exploratory Data Analysis (EDA)
-- Data visualization through graphs and tables.
+- Data visualization through graphs and tables.  
 - Feature engineering: New features have been created from existing features to improve model performance.
 - Feature selection: Deciding which features to include in the final model based on their importance and relevance.
 - Creation and training of a machine learning model to predict the hazard level of each pollutant.
