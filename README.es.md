@@ -1,120 +1,83 @@
-# **Proyecto Indice de Calidad del Aire 🌍🔍**
+# **Nivel de peligrosidad de contaminantes atmosféricos🌍🔍**
 ---
 ## *Descripción del Proyecto*
 
-Este proyecto tiene como objetivo analizar y visualizar datos relacionados con la calidad del aire, centrándose en el Índice de Calidad del Aire (AQI, por sus siglas en inglés) y evaluando el nivel de riesgo asociado con los valores contaminantes. Además, se integran datos meteorológicos para una comprensión más completa del entorno. Los datos utilizados en este proyecto han sido obtenidos de la Comunidad de Madrid, proporcionando información detallada sobre la calidad del aire en diferentes municipios de la región.
+Este proyecto tiene como objetivo predecir el nivel de peligrosidad de varios contaminantes atmosféricos en función de diferentes variables, como el tipo de área en la que se encuentra y los factores ambientales circundantes. La predicción del nivel de peligrosidad es esencial para comprender y mitigar los posibles riesgos asociados a la exposición a contaminantes en diferentes ubicaciones.
 
-**Objetivo principal:** 🚀 de este proyecto es desarrollar un modelo que pueda predecir el nivel de riesgo asociado con los valores de contaminantes. Esta predicción será una herramienta valiosa para la toma de decisiones en temas relacionados con la calidad del aire y la salud pública.
 
-**Índice de Calidad del Aire 🌍🔍(AQI):**
-Es una medida que proporciona información sobre la calidad del aire en una determinada área y cómo afecta la salud humana.
-Este índice se calcula tomando en cuenta varios contaminantes atmosféricos comunes, como partículas en suspensión (PM10 y PM2.5), dióxido de azufre (SO2), dióxido de nitrógeno (NO2), ozono (O3), y monóxido de carbono (CO).
-El AQI clasifica la calidad del aire en diferentes categorías, cada una asociada con un nivel de salud y recomendaciones específicas. Las categorías comunes incluyen:
+## *Objetivo principal:*
 
-- **Buena (0-50):** La calidad del aire se considera satisfactoria, y la contaminación del aire presenta poco o ningún riesgo.
-- **Moderada (51-100):** La calidad del aire es aceptable; sin embargo, algunas partículas pueden ser un problema para personas extremadamente sensibles a la contaminación del aire.
-- **No saludable para grupos sensibles (101-150):** Miembros de grupos sensibles, como personas con enfermedades respiratorias o cardíacas, pueden experimentar efectos en la salud. El público en general no se ve afectado.
-- **No saludable (151-200):** Todos pueden comenzar a experimentar efectos en la salud, y los miembros de grupos sensibles pueden experimentar efectos más graves.
-- **Muy no saludable (201-300):** Advertencias de salud de emergencia; la población entera es más propensa a verse afectada.
-- **Peligroso (301 o más):** Alerta de salud: todos pueden experimentar efectos de salud más graves.
+Este proyecto es importante porque permite predecir y comprender los niveles de contaminación del aire para:
 
-El AQI proporciona una herramienta fácil de entender para que el público comprenda la calidad del aire y tome medidas adecuadas para proteger su salud cuando sea necesario.
+- Proteger la salud pública.
+- Facilitar la planificación urbana sostenible.
+- Mejorar la calidad de vida de las personas.
+- Fomentar la conciencia ambiental.
+- Contribuir a la investigación científica en calidad del aire.
 
-Los datos han sido recopilados y compartidos por la Comunidad de Madrid como parte de su iniciativa de monitoreo de la calidad del aire. Puedes encontrar más información y acceder a los conjuntos de datos originales en el sitio web oficial de la Comunidad de Madrid (https://datos.comunidad.madrid/catalogo/organization/comunidad-de-madrid).
+## *Descripción de los Datos* 📈
 
-Agradecemos a la Comunidad de Madrid por proporcionar estos datos valiosos que han permitido llevar a cabo este análisis sobre la calidad del aire.
+Los datos proceden de la página oficial del Gobierno de España, Ministerio para la Transición Ecológica y el Reto Demográfico.
 
-## *Descripción de los Datos*
+Se introdujeron datos recogidos en la documentación de la página para obtener unos datos que nos ayuden a desarrollar la finalidad de nuestro proyecto.
 
-#### **ESTRUCTURA DE LOS ARCHIVOS**
+Fuente: 
 
-- provincia: Número que representa la provincia.
-- municipio: Número que identifica el municipio.
-- estacion: Número de la estación de monitoreo.
-- magnitud: Código que indica la magnitud medida.
-- punto_muestreo: Identificación específica del punto de muestreo.
-- ano, mes, dia: Año, mes y día de la medición.
-- h01 a h24: Concentraciones horarias respectivas para cada hora del día.
-- v01 a v24: Valores asociados a las concentraciones, representados como 'V'.
+(https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/temas/atmosfera-y-calidad-del-aire/calidad-del-aire/evaluacion-datos/datos/datos-oficiales-2022.html)
 
-#### **CONTAMINANTES** 🏭💨🚗
 
-> Conjunto de datos horarios medidos de forma automática en las estaciones de la Red de Calidad del Aire de la Comunidad de Madrid por anualidades.
+## *Estructura de los archivos*
+
+- FECHA. Fecha registrada en el momento de la toma de valores de contaminantes (numérico).
+- N_CCAA. Nombre de cada comunidad autónoma de España donde se han recogido datos de medición de cada contaminante (categórico)
+- PROVINCIA. Nombre de cada provincia en la que se han recogido datos de medición de cada contaminante (categórico)
+- N_MUNICIPIO. Nombre de cada municipio en el que se hayan recogido datos de mediciones de cada contaminante (categórico)
+- ESTACIÓN. Número asignado a cada estación de cada comunidad autónoma que ha registrado datos de medición de contaminantes (numérico)
+- MAGNITUD. Cada contaminante que se ha registrado en las distintas estaciones (categórico)
+- TIPO_AREA.Tipo de zona en la que se encuentran, zona urbana, suburbana o rural (categórico).
+- TIPO_ESTACION. Según la tipología de la fuente de emisión principal, tráfico, industrial o de fondo (categórico).
+- LATITUD, LONGITUD. Datos geográficos de cada estación donde se han registrado los contaminantes (numérico).
+- H01, H02, H03... H24. Valor registrado por hora de cada contaminante. Todos los contaminantes se han tomado con unidades de medida unificadas (µg/m3)(numérico)
+
+## *Contaminantes* 🏭💨🚗
+
 > Todos los datos de concentración están expresados en microgramos por metro cúbico (μg/m³).
 
-
-| CÓDIGO | MAGNITUD                         | DESCRIPCIÓN MAGNITUD | 
-|--------|---------------------------------|----------------------| 
-| 1      | Dióxido de azufre               | Fluorescencia ultravioleta | 
-| 6      | Monóxido de carbono             | Espectrometría infrarroja no dispersiva | 
-| 7      | Monóxido de nitrógeno           | Quimioluminiscencia    | 
-| 8      | Dióxido de nitrógeno            | Quimioluminiscencia    | 
-| 9      | Partículas en suspensión < PM2,5| Absorción beta        | 
-| 10     | Partículas en suspensión < PM10 | Absorción beta        | 
-| 12     | Óxidos de nitrógeno             | Quimioluminiscencia    | 
-| 14     | Ozono                           | Absorción ultravioleta | 
-| 20     | Tolueno                         | Cromatografía de gases | 
-| 22     | Black Carbon                    | Absorción de luz        | 
-| 30     | Benceno                         | Cromatografía de gases | 
-| 42     | Hidrocarburos totales           | Ionización llama        | 
-| 44     | Hidrocarburos no metánicos      | Ionización llama        | 
-| 431    | MetaParaXileno                  | Cromatografía de gases | 
-
-#### **CLIMATOLÓGICOS** 🌦️⛈️🌪️
-
-> Datos meteorológicos horarios desde el año 2020 recogidos por las estaciones de medición de la Red de Calidad del Aire de la Comunidad de Madrid.
-> Los datos meteorológicos oficiales son los proporcionados por la Agencia Estatal de Meteorología (AEMET).
-
-| CÓDIGO | MAGNITUD               | DESCRIPCIÓN MAGNITUD | 
-|--------|------------------------|----------------------| 
-| 81     | Velocidad del viento   | m/s                  | 
-| 82     | Dirección del viento   | Grd                  | 
-| 83     | Temperatura            | ºC                   | 
-| 86     | Humedad relativa       | %                    | 
-| 87     | Presión atmosférica    | mbar                 | 
-| 88     | Radiación solar        | W/m²                 | 
-| 89     | Precipitación          | l/m²                 | 
-
-
-#### **MUNICIPIOS** 🌇
-
-| ID    | Municipio            | ID    | Municipio                | ID    | Municipio                | ID    | Municipio                |
-|-------|----------------------|-------|--------------------------|-------|--------------------------|-------|--------------------------|
-| 5     | ALCALÁ DE HENARES    | 49    | COSLADA                  | 74    | LEGANÉS                  | 102   | ORUSCO DE TAJUÑA         |
-| 6     | ALCOBENDAS           | 58    | FUENLABRADA              | 80    | MAJADAHONDA              | 120   | PUERTO DE COTOS          |
-| 7     | ALCORCÓN             | 65    | GETAFE                   | 92    | MÓSTOLES                 | 123   | RIVAS-VACIAMADRID        |
-| 9     | ALGETE               | 67    | GUADALIX DE LA SIERRA    | 74    | LEGANÉS                  | 133   | SAN MARTÍN DE VALDEIGLESIAS |
-| 13    | ARANJUEZ             |-------|--------------------------| 80    | MAJADAHONDA              | 148   | TORREJÓN DE ARDOZ        |
-| 14    | ARGANDA DEL REY      |       |                          | 92    | MÓSTOLES                 | 161   | VALDEMORO                |
-| 16    | EL ATAZAR            |       |                          | 102   | ORUSCO DE TAJUÑA         | 171   | VILLA DEL PRADO          |
-| 45    | COLMENAR VIEJO       |       |                          | 120   | PUERTO DE COTOS          | 180   | VILLAREJO DE SALVANÉS    |
-| 47    | COLLADO VILLALBA     |       |                          | 123   | RIVAS-VACIAMADRID        |       |                          |
-
-
+| Contaminante                           | Nombre completo                      |
+|----------------------------------------|-------------------------------------|
+| С6Н6 (Benceno)                         | Benceno                             |
+| CO (Monóxido de carbono)               | Monóxido de carbono                 |
+| NO2 (Dióxido de nitrógeno)             | Dióxido de nitrógeno                |
+| NOX (Óxidos de nitrógeno)              | Óxidos de nitrógeno                 |
+| O3 (Ozono)                             | Ozono                               |
+| PM10 (Partículas diámetro 10 μm)       | Partículas diámetro 10 μm           |
+| PM2.5 (Partículas diámetro 2.5 μm)     | Partículas diámetro 2.5 μm         |
+| SO2 (Dióxido de azufre)                | Dióxido de azufre                   |
 
 ## *Características Principales*
 
-- Análisis de datos de calidad del aire.
-- Cálculo y representación del AQI.
-- Evaluación del nivel de riesgo asociado con los valores contaminantes.
-- Integración de datos meteorológicos.
+- Análisis Exploratorio de los Datos (EDA)
 - Visualización de datos a través de gráficos y tablas.
-- Creación y entrenamiento de un modelo de machine learning para predecir el AQI.
+- Ingeniería de características: Se han creado nuevas caractarísticas a partir de las existentes para mejorar el rendimiento del modelo.
+- Selección de características: Decidir qué características se incluirán en el modelo final en función de su importancia y relevancia.
+- Creación y entrenamiento de un modelo de machine learning para predecir el nivel de peligrosidad de cada contaminante.
 
 ## *Tecnologías Utilizadas*
 
 - Python 🐍
 - Pandas 🐼
+- Numpy 🧮
 - Matplotlib/Seaborn 📊
-- Scikit-learn (para el modelo de machine learning).
-- Otros módulos relevantes para análisis de datos y visualización.
-- API de datos meteorológicos (por ejemplo, OpenWeatherMap). 🌦️
+- Pickle 🥒
+- Scikit-learn 🤖 (para el modelo de machine learning).
+- Streamlit 🌐 (para desarrollar la aplicación web interactiva).  
 
 ## *Estructura del Proyecto*
 
 - `data/`: Carpeta que contiene los conjuntos de datos utilizados, procesados y temporales.
 - `models/`: Carpeta que contiene los modelos de machine learning.
-- `src/`: Carpeta que contiene el código fuente del proyecto.
+- `notebooks/`: Carpeta que contiene los cuadernos utilizados para el Análisis Exploratorio de los Datos (EDA) y la construcción del modelo Random Forest
+- `src/`: Carpeta que contiene el código para desplegar el modelo usando streamlit.
 - `README.md`: Documentación del proyecto (este archivo). 📚
 
 ## *Instrucciones de Ejecución*
