@@ -1,5 +1,7 @@
 # **Nivel de peligrosidad de contaminantes atmosféricos🌍🔍**
 ---
+![Logo](polucion.jpg)
+
 ## *Descripción del Proyecto*
 
 Este proyecto tiene como objetivo predecir el nivel de peligrosidad de varios contaminantes atmosféricos en función de diferentes variables, como el tipo de área en la que se encuentra y los factores ambientales circundantes. La predicción del nivel de peligrosidad es esencial para comprender y mitigar los posibles riesgos asociados a la exposición a contaminantes en diferentes ubicaciones.
@@ -93,6 +95,12 @@ Fuente:
 
     ```bash
     pip install -r requirements.txt
+
+
+## *Render*
+- Para crear la página web se ha usado: https://render.com/
+
+- Enlace a la web interactiva: https://air-quality-predict.onrender.com/
 
 ## *Cómo Contribuir*
 
